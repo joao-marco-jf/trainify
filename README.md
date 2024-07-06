@@ -1,50 +1,77 @@
-# Welcome to your Expo app 👋
+# Trainify
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Índice
 
-## Get started
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Execução](#execução)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Contribuição](#contribuição)
 
-1. Install dependencies
+## Pré-requisitos
 
-   ```bash
+Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
+
+- [Node.js](https://nodejs.org/en/)
+
+## Instalação
+
+Siga os passos abaixo para clonar o repositório e instalar as dependências do projeto:
+
+1. Clone o repositório:
+
+   ```sh
+   git clone https://github.com/joao-marco-jf/trainify.git
+   cd trainify
+   ```
+
+2. Instale as dependências:
+
+   ```sh
    npm install
    ```
 
-2. Start the app
+## Execução
 
-   ```bash
-    npx expo start
+Para iniciar a aplicação Expo, siga os passos abaixo:
+
+1. Execute o servidor de desenvolvimento do Expo:
+
+   ```sh
+   npm start web
    ```
 
-In the output, you'll find options to open the app in a
+2. Escaneie o código QR exibido no terminal ou na página do navegador com o aplicativo Expo Go (disponível na App Store e Google Play) para visualizar a aplicação no seu dispositivo móvel.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Estrutura do Projeto
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Aqui está uma breve descrição da estrutura de diretórios do projeto:
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+.
+├── .tamagui           # Arquivos de configuração do Tamagui
+├── app                # Arquivos principais da aplicação
+├── assets             # Imagens, fontes, etc.
+├── components         # Componentes reutilizáveis
+├── constants          # Constantes utilizadas na aplicação
+├── scripts            # Scripts auxiliares
+├── .gitignore         # Arquivo para ignorar arquivos no Git
+├── README.md          # Documentação do projeto
+├── app.config.ts      # Configuração do app Expo
+├── babel.config.js    # Configuração do Babel
+├── package-lock.json  # Dependências do projeto (gerado automaticamente)
+├── package.json       # Dependências e scripts do projeto
+├── tamagui-web.css    # Estilos específicos para Tamagui
+├── tamagui.config.ts  # Configuração do Tamagui
+└── tsconfig.json      # Configuração do TypeScript
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Contribuição
 
-## Learn more
+Se você deseja contribuir com este projeto, por favor siga os passos abaixo:
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Faça um fork do repositório.
+2. Crie uma nova branch (`git checkout -b feature/nova-funcionalidade`).
+3. Faça suas alterações e commit (`git commit -am 'Adiciona nova funcionalidade'`).
+4. Envie para a branch (`git push origin feature/nova-funcionalidade`).
+5. Crie um novo Pull Request.
